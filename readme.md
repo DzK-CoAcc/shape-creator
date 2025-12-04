@@ -1,0 +1,2 @@
+#  ShapeCreator
+* als Factory
