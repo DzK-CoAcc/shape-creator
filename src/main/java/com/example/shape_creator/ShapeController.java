@@ -1,9 +1,6 @@
 package com.example.shape_creator;
 
-import com.example.shape_creator.factory.CircleCreator;
-import com.example.shape_creator.factory.RectangleCreator;
-import com.example.shape_creator.factory.ShapeCreator;
-import com.example.shape_creator.factory.TriangleCreator;
+import com.example.shape_creator.factory.*;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
@@ -22,7 +19,7 @@ public class ShapeController {
     @FXML
 
     void initialize(){
-        shapeSelector.getItems().setAll("Kreis","Rechteck","Dreieck");
+        shapeSelector.getItems().setAll("Kreis","Rechteck","Dreieck","EmilKreis");
     }
 
 
@@ -43,6 +40,8 @@ public class ShapeController {
             case "Kreis" -> new CircleCreator(canvas);
             case "Rechteck" -> new RectangleCreator(canvas);
             case "Dreieck" -> new TriangleCreator(canvas);
+            case "EmilKreis" -> new EmilCreator(canvas);
+
 
 
             default -> null;
