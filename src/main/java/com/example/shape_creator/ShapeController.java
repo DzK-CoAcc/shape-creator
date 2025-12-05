@@ -19,7 +19,7 @@ public class ShapeController {
     @FXML
 
     void initialize(){
-        shapeSelector.getItems().setAll("Kreis","Rechteck","Dreieck","EmilKreis","MichaKreis");
+        shapeSelector.getItems().setAll("Kreis","Rechteck","Dreieck","EmilKreis","MichaKreis", "DenizRechteck");
     }
 
 
@@ -42,7 +42,7 @@ public class ShapeController {
             case "Dreieck" -> new TriangleCreator(canvas);
             case "EmilKreis" -> new EmilCreator(canvas);
             case "MichaKreis" -> new MichaCircleCreator((canvas));
-
+            case "DenizRechteck" -> new DenizRectangleCreator((canvas));
 
             default -> null;
         };
