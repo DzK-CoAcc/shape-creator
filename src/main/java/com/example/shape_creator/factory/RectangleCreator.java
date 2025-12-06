@@ -18,7 +18,6 @@ public class RectangleCreator extends ShapeCreator{
         Rectangle rec = new Rectangle(randomX(),randomY(),width,height);
         rec.setFill(Color.color(rnd.nextDouble(),rnd.nextDouble(),rnd.nextDouble(),0.6));
         rec.setStroke(Color.BLACK);
-
         return rec;
     }
 }
